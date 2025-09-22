@@ -1,0 +1,27 @@
+
+# Criar com streamlit Tela para consumir API feita com FASTAPI
+
+# Criar ambiente virtual:
+   python -m venv .venv
+
+# Executar o ambiente virtual:
+   .venv\scripts\activate.ps1
+
+# Instalar pacotes
+pip install requests
+pip install streamlit requests
+
+# Para Executar app. Antes tem que deixar rodando o API no FASTAPI
+streamlit run app.py
+
+
+
+ Obs.: 
+# Rode este comando para criar o arquivo requirements.txt  
+ pip freeze > requirements.txt
+
+ # Rode este comando para instalar tudo necessário  
+ pip install -r requirements.txt
+
+ # Pasta do Projeto
+ C:\AI\Projetos\PYTHON\Fast\appWebConsumirFastAPI

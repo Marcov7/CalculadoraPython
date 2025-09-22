@@ -1,0 +1,25 @@
+
+# Fui no gitHub
+Criei o ovo Create a new repository CalculadoraPython no gitHub
+
+# No GitHub, vá até seu repositório CalculadoraPython
+→ clique no botão Code → copie a URL (HTTPS).
+Ex.: https://github.com/seuusuario/CalculadoraPython.git
+
+# No vscode
+Criei a pasta onde desejo clonar o projeto novo
+C:\ProjetosGit 
+
+# Clonei git@github.com:Marcov7/CalculadoraPython.git
+git clone git@github.com:Marcov7/CalculadoraPython.git
+
+# Dentro da pasta C:\ProjetosGit agora tem a pasta clonada CalculadoraPython com informações do git e nada mais
+
+# Vá para a pasta
+cd CalculadoraPython
+
+# Crie a pasta do programa da Tela da calculadora e entre nela
+mkdir CalculadoraFastApiStreamlit
+cd CalculadoraFastApiStreamlit
+
+Copiar os 2 projetos para esta pasta
