@@ -23,3 +23,33 @@ mkdir CalculadoraFastApiStreamlit
 cd CalculadoraFastApiStreamlit
 
 Copiar os 2 projetos para esta pasta
+
+Confirmar a estrutura no VSCode
+
+# Dentro do VSCode você deve ver:
+
+CalculadoraPython
+└─ CalculadoraFastApiStreamlit
+      ├─ FastHello
+      └─ appWebConsumirFastAPI
+      
+# Enviar os arquivos para o GitHub
+
+No terminal (dentro da pasta raiz CalculadoraPython):
+
+git add .
+git commit -m "Adiciona FastHello e appWebConsumirFastAPI"
+git push origin main
+
+git add . → adiciona todos os arquivos.
+git commit -m "mensagem" → cria um ponto de histórico.
+git push origin main → envia para o GitHub (branch principal).
+
+ Se pedir login, use o token/pat ou GitHub Desktop para autenticar.
+
+# Conferir no GitHub
+
+Abra o repositório no site do GitHub.
+
+Atualize a página.
+Você verá a pasta CalculadoraFastApiStreamlit com seus dois projetos dentro.
