@@ -41,3 +41,24 @@ def calculadora2(item_id1: int, item_id2: int, operacao: str):
         return ({"operação": "MOD"},  {"resultado": item_id1 % item_id2})  
     else:
         return {"ERR", 0}
+
+
+@app.get("/calculadoraCircuferencia/{item_id1}/{operacao}")
+def calculadoraCircuferencia(item_id1: int, item_id2: int, operacao: str):
+    if operacao == "AREA":
+        return ({"operação": "AREA"},  {"resultado": math.pi * math.pow(item_id1, 2)}) 
+    elif operacao == "PERIMETER":
+        return ({"operação": "PERIMETER"},  {"resultado": 2 * math.pi * item_id1})
+
+
+@app.get("/calculadoraTriangulo/{item_id1}/{item_id2}/{item_id3}/{operacao}")
+def CalculadoraTriangulo(item_id1: int, item_id2: int, item_id3: int, operacao: str):
+    if operacao == "AREA":
+        SemiPerimetro = acharPerimetroDoTriangulo(item_id1, item_id2, item_id3)/2
+        return ({"operação": "AREA"},  {"resultado": math.sqrt(SemiPerimetro * (SemiPerimetro - item_id1) * (SemiPerimetro - item_id2) * (SemiPerimetro - item_id3))})
+    elif operacao == "PERIMETER":
+        return ({"operação": "PERIMETER"},  {"resultado": acharPerimetroDoTriangulo(item_id1, item_id2, item_id3)})
+
+    
+def acharPerimetroDoTriangulo(lado1: int, lado2: int, lado3: int):
+    return lado1 + lado2 + lado3
